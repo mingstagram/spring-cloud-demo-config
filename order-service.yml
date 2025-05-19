@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: order-service
+
+  datasource:
+    url: jdbc:mariadb://192.168.5.61:3306/orderdb
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: 1111
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
